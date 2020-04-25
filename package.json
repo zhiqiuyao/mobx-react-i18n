@@ -1,6 +1,6 @@
 {
   "name": "mobx-react-i18n",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Internationalize React App by mobx",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
