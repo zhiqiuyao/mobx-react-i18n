@@ -41,7 +41,7 @@
     "mobx-react": "^6.2.2"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "dependencies": {
     "mobx": "^5.15.4",
