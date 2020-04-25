@@ -1,25 +1,25 @@
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
 # mobx-react-i18n
-Internationalize React App by mobx
+利用 mobx 实现国际化
 
-<img src="example/example.png" width="600" alt="Usage example" />
+<img src="example/example.png" width="600" alt="例子" />
 
 * * *
 
--   [Installation](#installation)
--   [Getting Started](#getting-started)
+-   [安装](#安装)
+-   [指南](#指南)
 -   [API](#api)
 
-## Installation
+## 安装
 
 ```sh
 npm install --save mobx-react-i18n
 ```
 
-## Getting Started
+## 指南
 
-1. Create international files `zh-CN.json`, `en-US.json`:
+1. 创建国际化资源文件 `zh-CN.json`, `en-US.json`:
 ```json
 {
     "CHINESE": "中文",
@@ -32,7 +32,7 @@ npm install --save mobx-react-i18n
 }
 ```
 
-2. Inject your app as a global state by Provider
+2. 通过 Provider 将国际化全局状态注入到应用中
 ```js
 import { Provider } from "mobx-react";
 import {LanguageStore} from 'mobx-react-i18n';
@@ -52,7 +52,7 @@ ReactDOM.render((
 ), document.getElementById("app"));
 ```
 
-3. Use `<Language />` to translate string literals:
+3. 使用 `<Language />` 来转换字符串文本:
 ```js
 import { Language } from 'mobx-react-i18n';
 
@@ -66,19 +66,19 @@ const Greeting = () => (
 -   [LanguageStore](#LanguageStore)
 
 ### Language
-`<Language />` renders internationalized text.
+`<Language />` 渲染国际化文本.
 
 #### Parameters
 -   `props`
-    -   `props.resource` The key of international files.
+    -   `props.resource` 国际化文件中的 key.
 
 ### LanguageStore
-The class that generate global language store.
+用来生成国际化全局状态的 Store
 #### Parameters
 -   `options`
-    -   `options.currentLanguage` set default current language
-    -   `options.languageMap` All international files
+    -   `options.currentLanguage` 设置默认语言
+    -   `options.languageMap` 所需的国际化资源文件集
 -   `property`
-    -   `language.currentLanguage` current language in app
+    -   `language.currentLanguage` 当前语言
 -   `method`
-    -   `language.changeLanguageTo` switch language
+    -   `language.changeLanguageTo` 切换语言
