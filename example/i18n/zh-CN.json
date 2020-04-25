@@ -1,0 +1,9 @@
+{
+    "CHINESE": "中文",
+    "ENGLISH": "英文",
+    "greeting": "你好",
+    "btn": {
+        "confirm": "确认",
+        "cancel": "取消"
+    }
+}

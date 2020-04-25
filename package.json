@@ -20,16 +20,18 @@
   },
   "homepage": "https://github.com/zhiqiuyao/mobx-react-i18n#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
     "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
-    "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.19.0",
-    "rollup": "^1.29.0",
     "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-node-resolve": "^7.0.0",
-    "react-dom": "^16.13.1"
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "parcel-bundler": "^1.12.4",
+    "react-dom": "^16.13.1",
+    "rollup": "^1.29.0"
   },
   "peerDependencies": {
     "react": "^16.13.1",
@@ -38,5 +40,10 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.2.2",
+    "react": "^16.13.1"
+  }
 }

@@ -1,7 +1,7 @@
-import Text from './Text.jsx';
-import intlModel from './intlModel';
+import Language from './Language.jsx';
+import LanguageStore from './LanguageStore';
 
-export default {
-    Text,
-    intlModel
-};
+export {
+    Language,
+    LanguageStore
+}
